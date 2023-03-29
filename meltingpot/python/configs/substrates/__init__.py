@@ -72,6 +72,7 @@ SUBSTRATES: Set[str] = frozenset({
     'allelopathic_harvest__open',
     'bach_or_stravinsky_in_the_matrix__arena',
     'bach_or_stravinsky_in_the_matrix__repeated',
+    'boat_race__two_races',
     'boat_race__eight_races',
     'chemistry__three_metabolic_cycles',
     'chemistry__three_metabolic_cycles_with_plentiful_distractors',

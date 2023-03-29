@@ -33,6 +33,7 @@ from collections.abc import Mapping, Sequence
 from typing import Any
 
 from ml_collections import config_dict as configdict
+from meltingpot.python.configs.substrates import boat_race as base_config
 
 from meltingpot.python.utils.substrates import colors
 from meltingpot.python.utils.substrates import shapes
@@ -42,8 +43,8 @@ from meltingpot.python.utils.substrates import specs
 _ENABLE_DEBUG_OBSERVATIONS = False
 
 # This substrate only makes sense with exactly six players.
-MANDATED_NUM_PLAYERS = 6
-NUM_RACES = 8
+MANDATED_NUM_PLAYERS = 4
+NUM_RACES = 2
 PARTNER_DURATION = 75
 RACE_DURATION = 225
 UNROLL_LENGTH = 100
@@ -62,7 +63,7 @@ W      S  S    S  S      W
 ~~~~~~~~{{~~~~~~{{~~~~~~~~
 ~~~~~~~~AA~~~~~~AA~~~~~~~~
 ~~~~~~~~/\~~~~~~/\~~~~~~~~
-~~~~~~~p;:q    p;:q~~~~~~~
+~~~~~~~p;:q~~~~p;:q~~~~~~~
 W      SLJS    SLJS      W
 W      S--S    S--S      W
 W      S  S    S  S      W
@@ -829,10 +830,12 @@ ACTION_SET = (
 
 def get_config():
   """Configuration for the boat_race substrate."""
-  config = configdict.ConfigDict()
+
+  config = base_config.get_config()
 
   # Specify the number of players to particate in each episode (optional).
   config.recommended_num_players = MANDATED_NUM_PLAYERS
+  config.MANDATED_NUM_PLAYERS = MANDATED_NUM_PLAYERS
 
   # Action set configuration.
   config.action_set = ACTION_SET
@@ -854,6 +857,10 @@ def get_config():
 
   # The roles assigned to each player.
   config.valid_roles = frozenset({"default", "target"})
+
+  config.default_player_roles = ("default",) * MANDATED_NUM_PLAYERS
+
+  config.num_races = 2
 
   return config
 
