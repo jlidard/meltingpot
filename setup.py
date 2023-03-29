@@ -51,6 +51,13 @@ setuptools.setup(
             'assets/saved_models/**/**/variables/variables.index',
             'lua/modules/*',
             'lua/levels/**/*',
+            'python/configs/**/*',
+            'python/human_players/*',
+            'python/testing/*',
+            'python/utils/**/*',
+            'python/utils/substrates/wrappers/*'
+            'python/*',
+            'python/*.py',
         ],
     },
     python_requires='>=3.9',
