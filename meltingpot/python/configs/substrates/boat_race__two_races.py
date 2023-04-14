@@ -40,9 +40,9 @@ from meltingpot.python.utils.substrates import shapes
 from meltingpot.python.utils.substrates import specs
 
 # Warning: setting `_ENABLE_DEBUG_OBSERVATIONS = True` may cause slowdown.
-_ENABLE_DEBUG_OBSERVATIONS = False
+_ENABLE_DEBUG_OBSERVATIONS = True
 
-# This substrate only makes sense with exactly six players.
+# This substrate only makes sense with exactly four players.
 MANDATED_NUM_PLAYERS = 4
 NUM_RACES = 2
 PARTNER_DURATION = 75
@@ -62,11 +62,13 @@ W      S  S    S  S      W
 ~~~~~~~~gg~~~~~~gg~~~~~~~~
 ~~~~~~~~{{~~~~~~{{~~~~~~~~
 ~~~~~~~~AA~~~~~~AA~~~~~~~~
+~~~~~~~~{{~~~~~~{{~~~~~~~~
+~~~~~~~~AA~~~~~~AA~~~~~~~~
 ~~~~~~~~/\~~~~~~/\~~~~~~~~
 ~~~~~~~p;:q~~~~p;:q~~~~~~~
 W      SLJS    SLJS      W
 W      S--S    S--S      W
-W      S  S    S  S      W
+W      SRRS    SRRS      W
 W                        W
 W      OOOOOOOOOOOO      W
 W      OOOOOOOOOOOO      W
