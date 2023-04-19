@@ -51,6 +51,9 @@ UNROLL_LENGTH = 100
 
 ASCII_MAP = r"""
 WWWWWWWWWWWWWWWWWWWWWWWWWW
+W                        W
+W                        W
+W                        W
 W      RRRRRRRRRRRR      W
 W      RRRRRRRRRRRR      W
 W      RRRRRRRRRRRR      W
@@ -65,11 +68,17 @@ W      S  SS  SS  S      W
 ~~~~~~~~{{~~{{~~{{~~~~~~~~
 ~~~~~~~~{{~~{{~~{{~~~~~~~~
 ~~~~~~~~AA~~AA~~AA~~~~~~~~
+~~~~~~~~{{~~{{~~{{~~~~~~~~
+~~~~~~~~{{~~{{~~{{~~~~~~~~
+~~~~~~~~AA~~AA~~AA~~~~~~~~
+~~~~~~~~{{~~{{~~{{~~~~~~~~
+~~~~~~~~{{~~{{~~{{~~~~~~~~
+~~~~~~~~AA~~AA~~AA~~~~~~~~
 ~~~~~~~~/\~~/\~~/\~~~~~~~~
 ~~~~~~~p;:qp;:qp;:q~~~~~~~
 W      SLJSSLJSSLJS      W
 W      S--SS--SS--S      W
-W      SRRSSRRSSRRS      W
+W      S  SS  SS  S      W
 W                        W
 W      OOOOOOOOOOOO      W
 W      OOOOOOOOOOOO      W
