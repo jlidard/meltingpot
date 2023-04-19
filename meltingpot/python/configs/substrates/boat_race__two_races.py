@@ -69,7 +69,7 @@ W      S  SS  SS  S      W
 ~~~~~~~p;:qp;:qp;:q~~~~~~~
 W      SLJSSLJSSLJS      W
 W      S--SS--SS--S      W
-W      S  SS  SS  S      W
+W      SRRSSRRSSRRS      W
 W                        W
 W      OOOOOOOOOOOO      W
 W      OOOOOOOOOOOO      W
