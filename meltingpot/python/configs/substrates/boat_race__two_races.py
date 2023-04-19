@@ -43,7 +43,7 @@ from meltingpot.python.utils.substrates import specs
 _ENABLE_DEBUG_OBSERVATIONS = True
 
 # This substrate only makes sense with exactly four players.
-MANDATED_NUM_PLAYERS = 4
+MANDATED_NUM_PLAYERS = 6
 NUM_RACES = 2
 PARTNER_DURATION = 75
 RACE_DURATION = 225
