@@ -78,7 +78,7 @@ W      S  SS  SS  S      W
 ~~~~~~~p;:qp;:qp;:q~~~~~~~
 W      SLJSSLJSSLJS      W
 W      S--SS--SS--S      W
-W      SRRSSRRSSRRS      W
+W      SBBSSBBSSBBS      W
 W                        W
 W      OOOOOOOOOOOO      W
 W      OOOOOOOOOOOO      W
@@ -98,6 +98,7 @@ CHAR_PREFAB_MAP = {
     "W": "wall",
     "S": {"type": "all", "list": ["floor", "semaphore"]},
     "A": {"type": "all", "list": ["water_background", "single_apple"]},
+    "B": {"type": "all", "list": ["floor", "single_apple"]},
     "R": {"type": "all", "list": ["floor", "respawning_apple_north"]},
     "O": {"type": "all", "list": ["floor", "respawning_apple_south"]},
     "%": {"type": "all", "list": ["floor", "barrier_north"]},
